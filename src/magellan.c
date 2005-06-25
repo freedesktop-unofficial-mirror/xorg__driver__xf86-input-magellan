@@ -61,7 +61,7 @@
  *	Local Variables
  ****************************************************************************/
 
-InputDriverRec MAGELLAN = {
+_X_EXPORT InputDriverRec MAGELLAN = {
        1,
        "magellan",
        NULL,
@@ -167,7 +167,11 @@ TearDownProc( pointer p )
   }
 }
 
-XF86ModuleData magellanModuleData = { &VersionRec, MAGELLANSetupProc, TearDownProc };
+_X_EXPORT XF86ModuleData magellanModuleData = {
+    &VersionRec,
+    MAGELLANSetupProc,
+    TearDownProc
+};
 
 #endif /* XFreeLOADER */
 /* 
