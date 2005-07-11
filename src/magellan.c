@@ -34,6 +34,10 @@
  
 /* $XFree86: xc/programs/Xserver/hw/xfree86/input/magellan/magellan.c,v 1.10 2001/11/26 16:25:53 dawes Exp $ */
 
+#ifdef HAVE_CONFIG_H
+#include "config.h"
+#endif
+
 #define _MAGELLAN_C_
 /*****************************************************************************
  *	Standard Headers
