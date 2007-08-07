@@ -249,7 +249,6 @@ MagellanPreInit(InputDriverPtr drv, IDevPtr dev, int flags)
         }
 	
 	priv->buffer = XisbNew (pInfo->fd, 200);
-	DBG (9, XisbTrace (priv->buffer, 1));
 
 	/* 
 	 * Verify the hardware is attached and functional
