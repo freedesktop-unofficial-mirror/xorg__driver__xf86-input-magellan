@@ -45,7 +45,9 @@
 
 #include <misc.h>
 #include <xf86.h>
-#define NEED_XF86_TYPES
+#ifndef NEED_XF86_TYPES
+#define NEED_XF86_TYPES 1
+#endif
 #include <xf86_OSproc.h>
 #include <xf86Xinput.h>
 #include <xisb.h>
